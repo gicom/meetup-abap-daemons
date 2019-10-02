@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "slides": "reveal-md ./slides/slides.md --port 8080 --scripts './slides/lib/custom.js' --template './slides/lib/template.html' --watch",
+        "app": "node ./src/ui5/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "npm": "^6.10.1",
+        "reveal-md": "^3.0.4",
+        "ws": "^7.1.0"
+    }
+}

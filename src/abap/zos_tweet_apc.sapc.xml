@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SAPC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SAPC>
+    <HEADER>
+     <APPLICATION_ID>ZOS_TWEET_APC</APPLICATION_ID>
+     <VERSION>A</VERSION>
+     <PATH>/sap/bc/apc/sap/zos_tweet_apc</PATH>
+     <CLASS_NAME>ZOS_CL_TWEET_APC</CLASS_NAME>
+     <PROTOCOL_TYPE_ID>V10.PCP.SAP.COM</PROTOCOL_TYPE_ID>
+     <APPLICATION_VERSION>1</APPLICATION_VERSION>
+     <STATEFUL>X</STATEFUL>
+    </HEADER>
+    <TEXT>
+     <APPLICATION_ID>ZOS_TWEET_APC</APPLICATION_ID>
+     <VERSION>A</VERSION>
+     <LANG>E</LANG>
+     <DESCRIPTION>AMC Twitter Demo: Push Channel</DESCRIPTION>
+    </TEXT>
+   </SAPC>
+  </asx:values>
+ </asx:abap>
+</abapGit>
