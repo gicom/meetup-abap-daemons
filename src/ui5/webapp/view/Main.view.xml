@@ -1,0 +1,27 @@
+<mvc:View
+    controllerName="app.controller.Main"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        id="menu"
+        title="Twitter-Feed mit UI5"
+        class="sapUiContentPadding"
+        enableScrolling="false">
+        <ScrollContainer
+            id="scrollContainer"
+            vertical="true"
+            horizontal="false"
+            height="100%">
+            <List
+                id="feed"
+                items="{feed>/}">
+                <FeedListItem
+                    sender="{feed>user/name}"
+                    icon="{feed>user/profile_image_url}"
+                    info="{feed>id}"
+                    text="{feed>text}">
+                </FeedListItem>
+            </List>
+        </ScrollContainer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="manifest" href="manifest.json">
+	<title>UI5 Twitter</title>
+	<!-- Bootstrapping UI5 -->
+	<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-language="de"
+			data-sap-ui-resourceroots='{"app": "."}'>
+	</script>
+	<script>
+		sap.ui.getCore().attachInit(() => {
+			new sap.ui.core.ComponentContainer({
+				component: sap.ui.getCore().createComponent({
+					name: "app",
+					id: "component"
+				}),
+				async: true,
+				name: "app"
+			}).placeAt("content");
+		});
+	</script>
+	<style>
+		/* Fixes weird display behavior when image cannot be loaded */
+		img.sapMFeedListItemImage::before {
+			display: none !important;
+		}
+	</style>
+</head>
+<!-- UI Content -->
+<body class="sapUiBody" id="content" role="application">
+</body>
+</html>

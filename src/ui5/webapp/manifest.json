@@ -1,0 +1,52 @@
+{
+	"name": "UI5 Twitter",
+	"short_name": "UI5",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#3f5161",
+	"_version": "0.1.0",
+	"sap.app": {
+		"id": "app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "UI5 Twitter",
+		"applicationVersion": {
+			"version": "0.1.0"
+		}
+	},
+	"sap.ui": {
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.65.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "app.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		}
+	}
+}
