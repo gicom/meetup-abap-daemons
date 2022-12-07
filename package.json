@@ -4,9 +4,9 @@
         "app": "node ./src/ui5/server.js"
     },
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "npm": "^6.10.1",
-        "reveal-md": "^3.0.4",
+        "reveal-md": "^3.5.0",
         "ws": "^7.1.0"
     }
 }
